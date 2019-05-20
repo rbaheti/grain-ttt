@@ -108,7 +108,7 @@ class App extends Component {
 
     let winTieDiv = <div></div>;
     if (this.state.didWin) {
-      winTieDiv = <div className="alignDiv">{this.state.curPlayer === "O" ? "X" : "O"} Won.</div>;
+      winTieDiv = <div className="alignDiv">{this.state.nextChar === "O" ? "X" : "O"} Won.</div>;
     } else if (this.state.didTie) {
       winTieDiv = <div className="alignDiv">It was a tie!</div>;
     }
